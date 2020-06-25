@@ -18,6 +18,8 @@
 		1148F7832475D3D000A957CC /* youtube_onedaybuildsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148F7822475D3D000A957CC /* youtube_onedaybuildsTests.swift */; };
 		1148F78E2475D3D000A957CC /* youtube_onedaybuildsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148F78D2475D3D000A957CC /* youtube_onedaybuildsUITests.swift */; };
 		11661A4324A54D1700D70906 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11661A4224A54D1700D70906 /* CacheManager.swift */; };
+		11661A4524A5502300D70906 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11661A4424A5502300D70906 /* DetailViewController.swift */; };
+		11661A4824A556FB00D70906 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11661A4724A556FB00D70906 /* WebKit.framework */; };
 		11734C83247DDDCE00B83B4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11734C82247DDDCE00B83B4E /* Constants.swift */; };
 		11734C85247DE16C00B83B4E /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11734C84247DE16C00B83B4E /* Videos.swift */; };
 		11734C87247DE8D100B83B4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11734C86247DE8D100B83B4E /* Model.swift */; };
@@ -59,6 +61,8 @@
 		1148F78D2475D3D000A957CC /* youtube_onedaybuildsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youtube_onedaybuildsUITests.swift; sourceTree = "<group>"; };
 		1148F78F2475D3D000A957CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11661A4224A54D1700D70906 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		11661A4424A5502300D70906 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		11661A4724A556FB00D70906 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		11734C82247DDDCE00B83B4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		11734C84247DE16C00B83B4E /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		11734C86247DE8D100B83B4E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11661A4824A556FB00D70906 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +102,7 @@
 				1148F7812475D3D000A957CC /* youtube-onedaybuildsTests */,
 				1148F78C2475D3D000A957CC /* youtube-onedaybuildsUITests */,
 				1148F7692475D3CF00A957CC /* Products */,
+				11661A4624A556FA00D70906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,10 +149,19 @@
 			path = "youtube-onedaybuildsUITests";
 			sourceTree = "<group>";
 		};
+		11661A4624A556FA00D70906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11661A4724A556FB00D70906 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		11AD3AA024A52B1000CE83FB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				1148F76F2475D3CF00A957CC /* ViewController.swift */,
+				11661A4424A5502300D70906 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -320,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11661A4524A5502300D70906 /* DetailViewController.swift in Sources */,
 				1148F7702475D3CF00A957CC /* ViewController.swift in Sources */,
 				1148F76C2475D3CF00A957CC /* AppDelegate.swift in Sources */,
 				1148F76E2475D3CF00A957CC /* SceneDelegate.swift in Sources */,
